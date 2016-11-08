@@ -1,0 +1,38 @@
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<p id="notice"><%= notice %></p>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <tbody>
+                <% @posts.each do |post| %>
+                  <h3><%= post.title %></h3>
+                  <p><%= post.content %></p>
+                <% end %>
+              </tbody>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">  
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div align="center">
+      <%= link_to 'Blog Library', new_post_path %>  
+    </div>
+</article>
+
+
+
