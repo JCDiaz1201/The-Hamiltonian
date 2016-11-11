@@ -5,9 +5,9 @@
  */
 
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'engravure';
   font-size: 20px;
-  color: #404040;
+  color: black;
 }
 p {
   line-height: 1.5;
@@ -22,15 +22,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 800;
+  font-family: 'engravure';
+  font-weight: 400;
 }
 a {
   color: #404040;
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+  /*color: #0085a1;*/
 }
 a img:hover,
 a img:focus {
@@ -48,20 +48,16 @@ hr.small {
 }
 .navbar-custom {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 3;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'engravure';
 }
 .navbar-custom .navbar-brand {
-  font-weight: 800;
+  margin-bottom: 15px;
+  font-size: 21px;
 }
 .navbar-custom .nav li a {
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 1px;
+  margin-bottom: 15px;
+  font-family: 'engravure';
+  font-size: 20px;
 }
 @media only screen and (min-width: 768px) {
   .navbar-custom {
@@ -74,7 +70,7 @@ hr.small {
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: #878787;
   }
   .navbar-custom .nav li a {
     color: black;
@@ -82,7 +78,7 @@ hr.small {
   }
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: #878787;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -121,7 +117,7 @@ hr.small {
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #0085a1;
+    color: #878787;
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -145,8 +141,9 @@ hr.small {
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
+  font-family: 'engravure';
   padding: 100px 0 50px;
-  color: black;
+  color: #c0b283;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
@@ -169,7 +166,8 @@ hr.small {
   font-size: 24px;
   line-height: 1.1;
   display: block;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'engravure';
+  font-style: italic;
   font-weight: 300;
   margin: 10px 0 0;
 }
@@ -188,13 +186,13 @@ hr.small {
   display: block;
 }
 .intro-header .post-heading .subheading {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'engravure';
   font-size: 24px;
   margin: 10px 0 30px;
   font-weight: 600;
 }
 .intro-header .post-heading .meta {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'engravure';
   font-style: italic;
   font-weight: 300;
   font-size: 20px;
@@ -211,12 +209,12 @@ hr.small {
   }
 }
 .post-preview > a {
-  color: #404040;
 }
+
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #0085a1;
+  color: #878787;
 }
 .post-preview > a > .post-title {
   font-size: 30px;
@@ -224,6 +222,7 @@ hr.small {
   margin-bottom: 10px;
 }
 .post-preview > a > .post-subtitle {
+  font-size: 15px;
   margin: 0;
   font-weight: 300;
   margin-bottom: 10px;
@@ -240,7 +239,6 @@ hr.small {
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
-  color: #0085a1;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -320,13 +318,13 @@ footer .copyright {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #0085a1;
+  color: #878787;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
 }
 .btn {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'engravure';
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 800;
@@ -340,8 +338,8 @@ form .row:first-child .floating-label-form-group {
 }
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #878787;
+  border: 1px solid #878787;
   color: white;
 }
 .pager {
@@ -349,7 +347,7 @@ form .row:first-child .floating-label-form-group {
 }
 .pager li > a,
 .pager li > span {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'engravure';
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 800;
@@ -361,8 +359,8 @@ form .row:first-child .floating-label-form-group {
 .pager li > a:hover,
 .pager li > a:focus {
   color: white;
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #878787;
+  border: 1px solid #878787;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
@@ -375,12 +373,12 @@ form .row:first-child .floating-label-form-group {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #878787;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #878787;
 }
 img::selection {
   color: white;
@@ -391,5 +389,30 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #0085a1;
+  webkit-tap-highlight-color: #878787;
 }
+
+.show-new-post {
+  margin-left: 20px;
+}
+
+.edit-blog-post {
+  margin-left: 20px;
+}
+
+.index-created-at {
+  color: black;
+}
+
+#post-lib-index {
+  font-family: 'engravure';
+}
+
+#users-index {
+  margin-top: 40px;
+}
+
+
+
+
+

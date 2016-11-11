@@ -1,13 +1,13 @@
 <!-- Page Header -->
 <!-- Set your background image for this header on the line below. -->
-<header class="intro-header" style="background-image: url('http://hdwallpaperbackgrounds.net/wp-content/uploads/2016/08/Black-Background-12.jpg')>
+<header class="intro-header">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="site-heading">
                     <h1>The New Nationalism</h1>
                     <hr class="small">
-                    <span class="subheading">A New and Bold Political Movement</span>
+                    <span class="subheading">A New Vision for America</span>
                 </div>
             </div>
         </div>
@@ -23,6 +23,7 @@
                     <%= link_to posts_path('index') do %>
                       <h2><%= post.title %></h2>
                       <h5><%= post.content.truncate(100) %></h5>
+                      <p class="index-created-at">-<%= @primeuser.pseudonym %>, <%= post.created_at.strftime("%A, %d %b %Y %l:%M %p") %></p>
                     <% end %>
                     <br>
                 <% end %> 
@@ -31,9 +32,10 @@
             <!-- Pager -->
             <ul class="pager">
                 <li class="next">
-                    <a href="/posts">Older Posts &rarr;</a>
+                    <a href="/posts">Blog Archive &rarr;</a>
                 </li>
             </ul>
         </div>
     </div>
 </div>
+

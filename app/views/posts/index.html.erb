@@ -1,7 +1,9 @@
 <!-- Page Header -->
 <!-- Set your background image for this header on the line below. -->
 <p id="notice"><%= notice %></p>
-<header class="intro-header">
+<br>
+<br>
+<header class="intro-header" style="background-image: url('http://fluper.ru/ffh/17/flag_amerika_oblaka_nebo_patriotizm_2560x1600.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -11,26 +13,26 @@
         </div>
     </div>
 </header>
-
 <!-- Post Content -->
 <article>
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" id="post-lib-index">
               <tbody>
                 <% @posts.each do |post| %>
                   <h3><%= post.title %></h3>
-                  <p><%= post.content %></p>
+                  <p id="index-blog-content"><%= simple_format(post.content) %></p>
+                  <p><%= link_to 'Edit', edit_post_path(post) %> <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+                  <p/>
+                  <p>-<%= @primeuser.pseudonym %>, <%= post.created_at.strftime("%A, %d %b %Y %l:%M %p") %></p>
                 <% end %>
               </tbody>
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">  
-            </div>
         </div>
     </div>
     <br>
     <br>
     <div align="center">
-      <%= link_to 'Blog Library', new_post_path %>  
+      <%= link_to 'New Blog', new_post_path %>  
     </div>
 </article>
 

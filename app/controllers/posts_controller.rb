@@ -4,7 +4,8 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    @posts = Post.all.reverse_order
+    @primeuser = User.first
   end
 
   # GET /posts/1
