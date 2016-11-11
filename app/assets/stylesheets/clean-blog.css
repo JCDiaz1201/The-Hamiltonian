@@ -44,7 +44,7 @@ hr.small {
   max-width: 100px;
   margin: 15px auto;
   border-width: 4px;
-  border-color: white;
+  border-color: #C0b283;
 }
 .navbar-custom {
   position: absolute;
@@ -68,17 +68,19 @@ hr.small {
     color: black;
     padding: 20px;
   }
+  /*This is the brand, top right*/
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
-    color: #878787;
+    color: #C0b283;
   }
   .navbar-custom .nav li a {
     color: black;
     padding: 20px;
   }
+  /*This is the info bar to the left with the links to the other pages*/
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: #878787;
+    color: #C0b283;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -117,7 +119,7 @@ hr.small {
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #878787;
+    color: #C0b283;
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -143,7 +145,7 @@ hr.small {
 .intro-header .page-heading {
   font-family: 'engravure';
   padding: 100px 0 50px;
-  color: #c0b283;
+  color: #aa9655;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
@@ -318,7 +320,7 @@ footer .copyright {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #878787;
+  color: #C0b283;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
@@ -338,8 +340,8 @@ form .row:first-child .floating-label-form-group {
 }
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #878787;
-  border: 1px solid #878787;
+  background-color: #C0b283;
+  border: 1px solid #C0b283;
   color: white;
 }
 .pager {
@@ -359,8 +361,8 @@ form .row:first-child .floating-label-form-group {
 .pager li > a:hover,
 .pager li > a:focus {
   color: white;
-  background-color: #878787;
-  border: 1px solid #878787;
+  background-color: #C0b283;
+  border: 1px solid #C0b283;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
@@ -373,12 +375,12 @@ form .row:first-child .floating-label-form-group {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #878787;
+  background: #C0b283;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #878787;
+  background: #C0b283;
 }
 img::selection {
   color: white;
@@ -389,7 +391,7 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #878787;
+  webkit-tap-highlight-color: #C0b283;
 }
 
 .show-new-post {
@@ -412,6 +414,20 @@ body {
   margin-top: 40px;
 }
 
+.background-color-class {
+  background-color: #F4F4F4;
+}
+
+.pseudonym-name {
+  font-family: 'engravure';
+  color: #C0b283;
+  font-size: 25px;
+}
+
+.user-index-title {
+  font-family: 'engravure';
+  font-size: 35px;
+}
 
 
 

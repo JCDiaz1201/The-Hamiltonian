@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head class="background-color-class">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "My Application" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "The New Nationalism" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "My Application" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -15,7 +15,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="app/assets/javascripts/jquery_functions.js"></script>
   </head>
-  <body>
+  <body class="background-color-class">
     <header>
       <%= render 'layouts/navigation' %>
     </header>
