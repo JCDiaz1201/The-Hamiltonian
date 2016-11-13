@@ -1,6 +1,10 @@
 $(document).ready(function(){
-    $("#index-blog-content").click(function(){
-        $("#index-blog-content").hide();
-    });
-});
 
+	$("#hide").click(function(){
+	    $("index-blog-title").hide();
+	});
+
+	$("#show").click(function(){
+	    $("index-blog-title").show();
+	});
+});

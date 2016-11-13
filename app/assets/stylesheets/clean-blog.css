@@ -7,7 +7,7 @@
 body {
   font-family: 'engravure';
   font-size: 20px;
-  color: black;
+  color: #373737;
 }
 p {
   line-height: 1.5;
@@ -51,11 +51,9 @@ hr.small {
   font-family: 'engravure';
 }
 .navbar-custom .navbar-brand {
-  margin-bottom: 15px;
   font-size: 21px;
 }
 .navbar-custom .nav li a {
-  margin-bottom: 15px;
   font-family: 'engravure';
   font-size: 20px;
 }
@@ -65,7 +63,7 @@ hr.small {
     border-bottom: 1px solid transparent;
   }
   .navbar-custom .navbar-brand {
-    color: black;
+    color: #373737;
     padding: 20px;
   }
   /*This is the brand, top right*/
@@ -74,7 +72,7 @@ hr.small {
     color: #C0b283;
   }
   .navbar-custom .nav li a {
-    color: black;
+    color: #373737;
     padding: 20px;
   }
   /*This is the info bar to the left with the links to the other pages*/
@@ -138,7 +136,7 @@ hr.small {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
@@ -200,7 +198,7 @@ hr.small {
   font-size: 20px;
 }
 .intro-header .post-heading .meta a {
-  color: black;
+  color: #373737;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .post-heading h1 {
@@ -403,7 +401,7 @@ body {
 }
 
 .index-created-at {
-  color: black;
+  color: #373737;
 }
 
 #post-lib-index {
@@ -415,7 +413,7 @@ body {
 }
 
 .background-color-class {
-  background-color: #F4F4F4;
+  background-color: #e1e1e3;
 }
 
 .pseudonym-name {
@@ -427,6 +425,17 @@ body {
 .user-index-title {
   font-family: 'engravure';
   font-size: 35px;
+}
+
+#navbar-default-id {
+  background-color: white;
+  margin-top: -3px;
+  margin-bottom: -5px;
+}
+
+#post-index-background-img {
+  margin-top: -10px;
+  padding: 25px;
 }
 
 
