@@ -5,13 +5,11 @@
     <h3 align="center" class="user-index-title">Members</h3>
     <div class="column">
       <table class="table">
-        <tbody>
+        <div class="index-users-list" align="center">
           <% @users.each do |user| %>
-            <tr>
-              <%= render user %>
-            </tr>
+            <%= render user %>
           <% end %>
-        </tbody>
+        </div>
       </table>
     </div>
   </div>

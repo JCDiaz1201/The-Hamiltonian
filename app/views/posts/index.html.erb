@@ -17,12 +17,11 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" id="post-lib-index">
               <tbody>
-                <% @posts.each do |post| %>
-                  <h3 class="index-blog-title"><%= post.title %></h3>
-                  <p class="index-blog-content"><%= simple_format(post.content) %></p>
-                  <p><%= link_to 'Edit', edit_post_path(post) %> <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
-                  <p/>
-                  <p>-<%= @primeuser.pseudonym %>, <%= post.created_at.strftime("%A, %d %b %Y %l:%M %p") %></p>
+                <% @posts.each do |blog| %>
+                  <%= link_to page_path('pages') do %>
+                    <h3 id="index-blog-title"><%= blog.title %></h3>
+                    <p id="index-blog-info">-<%= @primeuser.pseudonym %>, <%= blog.created_at.strftime("%A, %d %b %Y %l:%M %p") %></p>
+                  <% end %>
                 <% end %>
               </tbody>
         </div>
@@ -33,6 +32,5 @@
       <%= link_to 'New Blog', new_post_path %>  
     </div>
 </article>
-
 
 

@@ -41,10 +41,9 @@ blockquote {
   font-style: italic;
 }
 hr.small {
-  max-width: 100px;
-  margin: 15px auto;
-  border-width: 4px;
-  border-color: #C0b283;
+  border: 10; 
+  height: 10px;  
+  border-color: #af9d61;
 }
 .navbar-custom {
   position: absolute;
@@ -69,7 +68,7 @@ hr.small {
   /*This is the brand, top right*/
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
-    color: #C0b283;
+    color: #af9d61;
   }
   .navbar-custom .nav li a {
     color: #373737;
@@ -78,7 +77,7 @@ hr.small {
   /*This is the info bar to the left with the links to the other pages*/
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: #C0b283;
+    color: #af9d61;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -117,7 +116,7 @@ hr.small {
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #C0b283;
+    color: #af9d61;
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -318,7 +317,7 @@ footer .copyright {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #C0b283;
+  color: #af9d61;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
@@ -338,8 +337,8 @@ form .row:first-child .floating-label-form-group {
 }
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #C0b283;
-  border: 1px solid #C0b283;
+  background-color: #af9d61;
+  border: 1px solid #af9d61;
   color: white;
 }
 .pager {
@@ -359,8 +358,8 @@ form .row:first-child .floating-label-form-group {
 .pager li > a:hover,
 .pager li > a:focus {
   color: white;
-  background-color: #C0b283;
-  border: 1px solid #C0b283;
+  background-color: #af9d61;
+  border: 1px solid #af9d61;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
@@ -373,12 +372,12 @@ form .row:first-child .floating-label-form-group {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #C0b283;
+  background: #af9d61;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #C0b283;
+  background: #af9d61;
 }
 img::selection {
   color: white;
@@ -389,7 +388,7 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #C0b283;
+  webkit-tap-highlight-color: #af9d61;
 }
 
 .show-new-post {
@@ -418,7 +417,7 @@ body {
 
 .pseudonym-name {
   font-family: 'engravure';
-  color: #C0b283;
+  color: #af9d61;
   font-size: 25px;
 }
 
@@ -429,13 +428,18 @@ body {
 
 #navbar-default-id {
   background-color: white;
-  margin-top: -3px;
-  margin-bottom: -5px;
+  margin-top: -5px;
+  margin-bottom: -10px;
 }
 
 #post-index-background-img {
   margin-top: -10px;
   padding: 25px;
+}
+
+#index-blog-info {
+  font-size: 10px;
+  margin: 10px;
 }
 
 
