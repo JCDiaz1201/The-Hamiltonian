@@ -15,7 +15,6 @@ group :development, :test do
   gem 'spring'
 end
 gem 'bootstrap-sass'
-gem 'high_voltage'
 group :development do
   gem 'hub', :require=>nil
   gem 'rails_layout'

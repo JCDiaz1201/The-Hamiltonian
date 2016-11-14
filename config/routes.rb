@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  resources :posts
-  resources :users
-  resources :pages
-  root 		to: 'visitors#index'
+  root 				'visitors#index'
+  get '/about',		to: 'visitors#about'
+
+  resources 		:visitors, only:[:index, :show]
+  resources 		:posts
+  resources 		:users
 end
