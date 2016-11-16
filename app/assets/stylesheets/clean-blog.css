@@ -1,8 +1,5 @@
-/*!
- * Clean Blog v1.0.0 (http://startbootstrap.com)
- * Copyright 2014 Start Bootstrap
- * Licensed under Apache 2.0 (https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
- */
+
+
 
 body {
   font-family: 'engravure';
@@ -14,8 +11,8 @@ p {
   margin: 30px 0;
 }
 p a {
-  text-decoration: underline;
-}
+  /*text-decoration: none;
+*/}
 h1,
 h2,
 h3,
@@ -24,13 +21,15 @@ h5,
 h6 {
   font-family: 'engravure';
   font-weight: 400;
+  text-decoration: none;
 }
 a {
   color: #404040;
 }
 a:hover,
 a:focus {
-  /*color: #0085a1;*/
+  color: black;
+  text-decoration: none;
 }
 a img:hover,
 a img:focus {
@@ -46,7 +45,7 @@ hr.small {
   border-color: #af9d61;
 }
 .navbar-custom {
-  position: absolute;
+  /*position: absolute;*/
   font-family: 'engravure';
 }
 .navbar-custom .navbar-brand {
@@ -62,8 +61,8 @@ hr.small {
     border-bottom: 1px solid transparent;
   }
   .navbar-custom .navbar-brand {
-    color: #373737;
     padding: 20px;
+    color:white;
   }
   /*This is the brand, top right*/
   .navbar-custom .navbar-brand:hover,
@@ -71,8 +70,8 @@ hr.small {
     color: #af9d61;
   }
   .navbar-custom .nav li a {
-    color: #373737;
     padding: 20px;
+    color: white;
   }
   /*This is the info bar to the left with the links to the other pages*/
   .navbar-custom .nav li a:hover,
@@ -80,12 +79,12 @@ hr.small {
     color: #af9d61;
   }
 }
-@media only screen and (min-width: 1170px) {
+/*@media only screen and (min-width: 1170px) {
   .navbar-custom {
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
     transition: background-color 0.3s;
-    /* Force Hardware Acceleration in WebKit */
+     Force Hardware Acceleration in WebKit 
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
@@ -95,7 +94,7 @@ hr.small {
     backface-visibility: hidden;
   }
   .navbar-custom.is-fixed {
-    /* when the user scrolls down, we hide the header right above the viewport */
+     when the user scrolls down, we hide the header right above the viewport 
     position: fixed;
     top: -61px;
     background-color: rgba(255, 255, 255, 0.9);
@@ -119,14 +118,14 @@ hr.small {
     color: #af9d61;
   }
   .navbar-custom.is-visible {
-    /* if the user changes the scrolling direction, we show the header */
+     if the user changes the scrolling direction, we show the header 
     -webkit-transform: translate3d(0, 100%, 0);
     -moz-transform: translate3d(0, 100%, 0);
     -ms-transform: translate3d(0, 100%, 0);
     -o-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
   }
-}
+}*/
 .intro-header {
   background-color: #808080;
   background: no-repeat center center;
@@ -238,7 +237,7 @@ hr.small {
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
@@ -401,6 +400,7 @@ body {
 
 .index-created-at {
   color: #373737;
+  margin-left: 20px;
 }
 
 #post-lib-index {
@@ -427,7 +427,7 @@ body {
 }
 
 #navbar-default-id {
-  background-color: white;
+  background-color: black;
   margin-top: -5px;
   margin-bottom: -10px;
 }
@@ -437,10 +437,44 @@ body {
   padding: 25px;
 }
 
-#index-blog-info {
-  font-size: 10px;
+#blog-info {
+  font-size: 15px;
+}
+
+#show-post-edit {
+  font-family: 'engravure';
+  font-size: 15px;
   margin: 10px;
 }
+
+.index-blog-title {
+  margin-bottom: -25px;
+  margin-left: -20px; 
+}
+
+.index-blog-info {
+  font-family: 'engravure';
+  font-size: 15px;
+  color: black;
+}
+
+.index-blog-info:hover,
+.index-blog-info:focus {
+  text-decoration: none;
+  color: #7a7a7a
+}
+
+.index-subtitle {
+  margin-left: 20px;
+  margin-bottom: -20px;
+}
+
+
+
+
+
+
+
 
 
 

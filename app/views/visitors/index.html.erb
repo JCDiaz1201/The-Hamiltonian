@@ -20,12 +20,12 @@
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-preview">
                 <% @posts.each do |blog| %>
-                    <%= link_to page_path('pages') do %>
-                      <h2><%= blog.title %></h2>
-                      <h5><%= blog.content.truncate(100) %></h5>
-                      <p class="index-created-at">-<%= @primeuser.pseudonym %>, <%= blog.created_at.strftime("%A, %d %b %Y %l:%M %p") %></p>
+                    <%= link_to post_path(blog.id) do %>
+                        <h2 class="index-title"><%= blog.title %></h2>
+                        <h5 class="index-subtitle"><%= blog.content.truncate(100) %></h5>
+                        <p class="index-created-at">-<%= @primeuser.pseudonym %>, <%= blog.created_at.strftime("%b %d, %Y") %></p>
+                        <br>
                     <% end %>
-                    <br>
                 <% end %> 
             </div>
             <hr>
@@ -38,5 +38,6 @@
         </div>
     </div>
 </div>
+
 
 

@@ -16,14 +16,14 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" id="post-lib-index">
-              <tbody>
-                <% @posts.each do |blog| %>
-                  <%= link_to page_path('pages') do %>
-                    <h3 id="index-blog-title"><%= blog.title %></h3>
-                    <p id="index-blog-info">-<%= @primeuser.pseudonym %>, <%= blog.created_at.strftime("%A, %d %b %Y %l:%M %p") %></p>
-                  <% end %>
+            <% @posts.each do |blog| %>
+                <%= link_to post_path(blog.id) do %>
+                <ul class="index-blog-info">
+                    <h2 class="index-blog-title"><%= blog.title %></h2>
+                    <p><%= @primeuser.pseudonym %>, <%= blog.created_at.strftime("%b %d, %Y") %></p>
+                </ul>
                 <% end %>
-              </tbody>
+            <% end %>
         </div>
     </div>
     <br>
