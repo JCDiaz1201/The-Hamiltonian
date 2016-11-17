@@ -1,6 +1,33 @@
+
 <br>
 <br>
-<div>
-	<h3>User</h3>
-	<p>Email: <%= @user.email if @user.email %></p>
+<p id="notice"><%= notice %></p>
+<header class="intro-header" style="background-image: url('http://fluper.ru/ffh/17/flag_amerika_oblaka_nebo_patriotizm_2560x1600.jpg')" id="post-index-background-img">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container" id="users-index">
+  <div class="row">
+    <h2 align="center" class="user-index-title">Welcome, <%= @user.pseudonym %></h2>
+    <div class="column">
+      <table class="table">
+        <div class="index-users-table">
+        	<% @posts.each do |blog| %>
+        		<%= link_to post_path(blog.id) do %>
+        			<h3 class="index-user-info"><%= blog.title %></h3>
+        			<p><%= link_to 'Edit', edit_post_path(blog.id) %> |
+                	<%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+        		<% end %>
+        	<% end %>
+        </div>
+      </table>
+    </div>
+  </div>
 </div>
