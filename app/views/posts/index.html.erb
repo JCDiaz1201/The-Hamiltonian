@@ -15,7 +15,7 @@
 <article>
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" id="post-lib-index">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" id="post-lib-index" align="center">
             <% @posts.each do |blog| %>
                 <%= link_to post_path(blog.id) do %>
                 <ul class="index-blog-info">
@@ -25,11 +25,6 @@
                 <% end %>
             <% end %>
         </div>
-    </div>
-    <br>
-    <br>
-    <div align="center">
-      <%= link_to 'New Blog', new_post_path %>  
     </div>
 </article>
 

@@ -16,18 +16,21 @@
 <div class="container" id="users-index">
   <div class="row">
     <h2 align="center" class="user-index-title">Welcome, <%= @user.pseudonym %></h2>
-    <div class="column">
-      <table class="table">
+        <br>
+        <div class="new-post-link" align="center">
+          <%= link_to 'New Blog', new_post_path %>  
+        </div>
+        <br>
         <div class="index-users-table">
         	<% @posts.each do |blog| %>
-        		<%= link_to post_path(blog.id) do %>
-        			<h3 class="index-user-info"><%= blog.title %></h3>
-        			<p><%= link_to 'Edit', edit_post_path(blog.id) %> |
-                	<%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></p>
-        		<% end %>
+                <div align="center">
+            		<%= link_to post_path(blog.id) do %>
+            			<h3 class="index-user-info"><%= blog.title %></h3>
+            			<p><%= link_to 'Edit', edit_post_path(blog.id) %> |
+                    	<%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+            		<% end %>
+                </div>
         	<% end %>
         </div>
-      </table>
-    </div>
   </div>
 </div>

@@ -479,10 +479,11 @@ body {
   color: #7a7a7a
 }
 
-
-
-
-
+.new-post-link {
+  font-size: 25px;
+  font-family: 'engravure';
+  color: black;
+}
 
 
 
