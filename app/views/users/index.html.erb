@@ -3,14 +3,10 @@
 <div class="container" id="users-index">
   <div class="row">
     <h3 align="center" class="user-index-title">Contributors</h3>
-    <div class="column">
-      <table class="table">
-        <div class="index-users-list" align="center">
-          <% @users.each do |user| %>
-            <%= render user %>
-          <% end %>
-        </div>
-      </table>
-    </div>
+      <div class="index-users-list" align="center">
+        <% @users.each do |user| %>
+          <%= render user %>
+        <% end %>
+      </div>
   </div>
 </div>

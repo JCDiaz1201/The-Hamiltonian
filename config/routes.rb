@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get 		'/show',	to: 'visitors#show'
   get    	'/login',   to: 'sessions#new'
   post   	'/login',   to: 'sessions#create'
-  delete 	'/logout',  to: 'sessions#destroy'
+  get	 	'/logout',  to: 'sessions#destroy'
 
   resources 		:visitors, only:[:index]
   resources 		:posts
