@@ -3,7 +3,7 @@
 	<% if current_user %>
     	<%= link_to 'Home', user_path(current_user) %>
     <% else %>
-    	<%= link_to 'Home', root_path %>
+    	<%= link_to 'Home', root_path() %>
     <% end %>
 </li>
 <li>
