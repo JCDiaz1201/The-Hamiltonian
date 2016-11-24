@@ -20,7 +20,7 @@
                 <%= link_to post_path(blog.id) do %>
                 <ul class="index-blog-info">
                     <h2 class="index-blog-title"><%= blog.title %></h2>
-                    <p><%= @primeuser.pseudonym %>, <%= blog.created_at.strftime("%b %d, %Y") %></p>
+                    <p><%= blog.user.pseudonym %>, <%= blog.created_at.strftime("%b %d, %Y") %></p>
                 </ul>
                 <% end %>
             <% end %>

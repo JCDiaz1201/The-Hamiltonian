@@ -5,13 +5,11 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all.reverse_order
-    @primeuser = User.first
   end
 
   # GET /posts/1
   # GET /posts/1.json
   def show
-    @primeuser = User.first
   end
 
   # GET /posts/new

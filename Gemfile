@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 2.0'
 gem "rspec"
 gem "bcrypt", '3.1.11'
 gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
+gem "pundit"
 group :development, :test do
   gem 'byebug'
   gem 'spring'

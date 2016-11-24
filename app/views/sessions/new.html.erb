@@ -23,6 +23,10 @@
       <div class="pager">
       	<%= f.submit "Log in", class: "btn btn-primary" %>
       </div>
+      <div class="pager">
+        <h3>New user?</h3>
+        <%= link_to "Sign up now!", new_user_path() %>
+      </div>
       <br>
       <br>
     <% end %>

@@ -18,7 +18,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <p><%= @post.content %></p>   
-                <p id="blog-info">-<%= @primeuser.pseudonym %>, <%= @post.created_at.strftime("%b %d, %Y") %></p> 
+                <p id="blog-info">-<%= @post.user.pseudonym %>, <%= @post.created_at.strftime("%b %d, %Y") %></p> 
             </div>
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" align="center" >  
             </div>
