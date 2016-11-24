@@ -1,4 +1,5 @@
 <br>
+<br>
 <p id="notice"><%= notice %></p>
 <header class="intro-header" style="background-image: url('http://fluper.ru/ffh/17/flag_amerika_oblaka_nebo_patriotizm_2560x1600.jpg')" id="post-index-background-img">
     <div class="container">
@@ -16,7 +17,9 @@
     <h2 align="center" class="user-index-title">Welcome, <%= @user.pseudonym %></h2>
         <br>
         <div class="new-post-link" align="center">
-          <%= link_to 'New Blog', new_post_path %>  
+            <% if @user.admin? %>
+                <%= link_to 'New Blog', new_post_path %>
+            <% end %> 
         </div>
         <br>
         <div class="index-users-table">

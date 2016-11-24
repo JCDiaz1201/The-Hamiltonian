@@ -1,5 +1,7 @@
 <!-- Page Header -->
 <!-- Set your background image for this header on the line below. -->
+<br>
+<br>
 <p id="notice"><%= notice %></p>
 <header class="intro-header" style="background-image: url('http://fluper.ru/ffh/17/flag_amerika_oblaka_nebo_patriotizm_2560x1600.jpg')" id="post-index-background-img">
     <div class="container">
@@ -15,11 +17,11 @@
 <article>
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" id="post-lib-index" align="center">
+            <div id="post-lib-index">
             <% @posts.each do |blog| %>
                 <%= link_to post_path(blog.id) do %>
                 <ul class="index-blog-info">
-                    <h2 class="index-blog-title"><%= blog.title %></h2>
+                    <h2 class="index-blog-title" ><%= blog.title %></h2>
                     <p><%= blog.user.pseudonym %>, <%= blog.created_at.strftime("%b %d, %Y") %></p>
                 </ul>
                 <% end %>
@@ -27,5 +29,6 @@
         </div>
     </div>
 </article>
+
 
 
