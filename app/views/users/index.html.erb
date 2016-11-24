@@ -5,8 +5,11 @@
     <h3 align="center" class="user-index-title">Contributors</h3>
       <div class="index-users-list" align="center">
         <% @users.each do |user| %>
-          <%= render user %>
+        	<% if user.admin? %>
+        		<%= render user %>
+        	<% end %>
         <% end %>
       </div>
   </div>
 </div>
+
