@@ -489,17 +489,14 @@ body {
 }
 
 /*blog comment box for show page*/
-/*.blog-comment-box {
+.blog-comment-box {
   padding: 5px;
 }
 
-.blog-comment-content {
-  margin-bottom: -20px;
+.new-comment-link {
+  margin-left: 35px;
+  margin-bottom: 25px;
 }
-
-.blog-comment-user {
-  margin-left: 50px;
-}*/
 
 /*shared error form*/
 #error_explanation {
@@ -516,4 +513,15 @@ body {
     color: $state-danger-text;
   }
 }
+
+.comment-user-info-2 {
+  text-indent: 20px;
+}
+
+.comment-user-info-3 {
+  text-indent: 50px;
+
+}
+
+
 

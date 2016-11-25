@@ -35,10 +35,14 @@
         </div>
         <div class="col-md-8">
             <% if @user.comments.any? %>
-                <h3>Comments: (<%= @user.comments.count %>)</h3>
+                <h3>Comments:</h3>
                 <ol class="comments">
                     <% @comments.each do |comment| %>
-                        <%= comment.content %>
+                        <br>
+                        <p class="comment-user-info-1"><b>Comment:</b> <%= comment.content %></p>
+                        <p class="comment-user-info-2"><b>From article:</b> <%= comment.post.title %></p>
+                        <p class="comment-user-info-3"><b>Created on:</b> <%= comment.created_at.strftime("%b %d, %Y") %></p>
+                        <br>
                     <% end %>
                 </ol>
             <% end %>
