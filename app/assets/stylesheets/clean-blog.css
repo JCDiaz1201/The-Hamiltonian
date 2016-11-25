@@ -488,6 +488,19 @@ body {
   width: 700px;
 }
 
+/*blog comment box for show page*/
+/*.blog-comment-box {
+  padding: 5px;
+}
+
+.blog-comment-content {
+  margin-bottom: -20px;
+}
+
+.blog-comment-user {
+  margin-left: 50px;
+}*/
+
 /*shared error form*/
 #error_explanation {
   color: red;

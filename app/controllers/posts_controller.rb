@@ -10,6 +10,8 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    @post = Post.find(params[:id])
+    @comments = @post.comments
     @user = current_user
   end
 
@@ -60,10 +62,6 @@ class PostsController < ApplicationController
       format.html { redirect_to posts_url, notice: 'Post was successfully destroyed.' }
       format.json { head :no_content }
     end
-  end
-
-  def admin_list
-    authorize Post
   end
 
   private

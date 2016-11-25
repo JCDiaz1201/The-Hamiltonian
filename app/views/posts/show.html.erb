@@ -16,11 +16,33 @@
 <article>
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="col-lg-12">
                 <p><%= @post.content %></p>   
                 <p id="blog-info">-<%= @post.user.pseudonym %>, <%= @post.created_at.strftime("%b %d, %Y") %></p> 
             </div>
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" align="center" >  
+
+            <div class="col-lg-12" align="center">
+              <% if current_user %>
+                  <div>
+                    <%= link_to 'New Comment', new_post_comment_path(@post.id) %>
+                  </div>
+              <% end %>
+            </div>
+
+            <div class="col-lg-12" align="center">
+              <ol>
+                <% @comments.each do |comment| %>
+                    <div>
+                        <div>
+                            <%= comment.content %>
+                        </div>
+                        <br>
+                        <div>
+                            -<%= comment.user.pseudonym %>
+                        </div>
+                    </div>
+                <% end %>
+              </ol>
             </div>
         </div>
     </div>
