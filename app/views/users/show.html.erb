@@ -14,9 +14,9 @@
 
 <div class="container" id="users-index">
   <div class="row">
-    <h2 align="center" class="user-index-title">Welcome, <%= @user.pseudonym %></h2>
+    <h2 align="left" class="user-index-title">Welcome, <%= @user.pseudonym %></h2>
         <br>
-        <div class="new-post-link" align="center">
+        <div class="new-post-link" align="left">
             <% if @user.admin? %>
                 <%= link_to 'New Blog', new_post_path %>
             <% end %> 
@@ -24,7 +24,7 @@
         <br>
           <% if @posts.length > 0 %>
             <div class="col-md-6">
-                <h2 id="previous-post-title" align="left">Previoud posts</h2>
+                <h2 id="previous-post-title" align="left">Previoud Blogs</h2>
                 <div class="index-user-table">
                 	<% @posts.each do |blog| %>
                         <div>
