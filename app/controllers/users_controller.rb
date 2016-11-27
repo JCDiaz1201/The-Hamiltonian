@@ -6,7 +6,7 @@ class UsersController < ApplicationController
 	def show
 		@user = User.find(params[:id]); nil
 		@posts = @user.posts.all.reverse_order; nil
-		@comments = @user.comments
+		@comments = @user.comments.reverse_order
 	end
 
 	def new

@@ -516,11 +516,25 @@ body {
 
 .comment-user-info-2 {
   text-indent: 20px;
+  margin-top: -20px;
 }
 
 .comment-user-info-3 {
+  margin-top: -20px;
   text-indent: 50px;
+}
 
+.comment-user-info-edit {
+  margin-top: -20px;
+  text-indent: 80px;
+}
+
+#previous-post-title {
+  text-decoration: underline;
+}
+
+#previous-comment-title {
+  text-decoration: underline;
 }
 
 
