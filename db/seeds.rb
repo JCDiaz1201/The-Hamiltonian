@@ -5,7 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-user = User.find_by(email: "thedude@email.com")
-user.password = "1234567"
-user.admin = true
-user.save
+
+User.create!(pseudonym: "Publius",
+			email: "jcdiaz1201@gmail.com",
+			password: "Lv1234567",
+			password_confirmation: "Lv1234567",
+			admin: true,
+			activated: true,
+			activated_at: Time.zone.now)
