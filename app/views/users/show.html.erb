@@ -30,6 +30,7 @@
                         <div>
                     		<%= link_to post_path(blog.id) do %>
                     			<h3 class="index-user-info"><%= blog.title %></h3>
+                          <p><%= blog.content.truncate(100) %></p>
                     			<p><%= link_to 'Edit', edit_post_path(blog.id) %> |
                             	<%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></p>
                     		<% end %>

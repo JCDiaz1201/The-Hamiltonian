@@ -15,32 +15,36 @@
 <!-- Post Content -->
 <article>
     <div class="container">
-       <div class="col-lg-12">
-            <p><%= @post.content %></p>   
-            <p id="blog-info">-<%= @post.user.pseudonym %>, <%= @post.created_at.strftime("%b %d, %Y") %></p> 
-        </div>
-
-        <div class="col-lg-12" align="center">
-          <% if current_user %>
-              <div class="new-comment-link">
-                <%= link_to 'New Comment', new_post_comment_path(@post.id) %>
-              </div>
-          <% end %>
-        </div>
-
-        <div class="col-lg-12" align="center">
-          <ol>
-            <% @comments.each do |comment| %>
-                <div>
-                    <div class="blog-comment-content">
-                        <%= comment.content %>
-                        <br>
-                        -<%= comment.user.pseudonym %>
-                    </div>
-                    <br>
+        <row>
+           <div class="col-md-12" align="center">
+                <p><%= simple_format(@post.content) %></p>   
+                <p id="blog-info">-<%= @post.user.pseudonym %>, <%= @post.created_at.strftime("%b %d, %Y") %></p> 
+            </div>
+            <div class="col-md-12" align="center">
+              <% if current_user %>
+                <div class="new-comment-link">
+                  <%= link_to 'New Comment', new_post_comment_path(@post.id) %>
                 </div>
-            <% end %>
-          </ol>
-        </div>
+              <% else %>
+                <div>
+                  <%= link_to 'Wish to comment? Please join!', new_user_path %>
+                </div>
+              <% end %>
+            </div>
+            <div class="col-md-12" align="center">
+              <ol>
+                <% @comments.each do |comment| %>
+                    <div>
+                        <div class="blog-comment-content">
+                            <%= comment.content %>
+                            <br>
+                            -<%= comment.user.pseudonym %>
+                        </div>
+                        <br>
+                    </div>
+                <% end %>
+              </ol>
+            </div>
+        </row>
     </div>
 </article>

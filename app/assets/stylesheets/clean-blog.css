@@ -78,7 +78,7 @@ hr.small {
     color: #af9d61;
   }
 }
-/*@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1170px) {
   .navbar-custom {
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
@@ -124,7 +124,7 @@ hr.small {
     -o-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
   }
-}*/
+}
 .intro-header {
   background-color: #808080;
   background: no-repeat center center;
@@ -370,12 +370,12 @@ form .row:first-child .floating-label-form-group {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #af9d61;
+  background: white;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #af9d61;
+  background: black;
 }
 img::selection {
   color: white;
