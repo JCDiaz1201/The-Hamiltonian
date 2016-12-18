@@ -29,8 +29,21 @@ Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.
 Getting Started
 ---------------
 
+Simply switch to the directory you store the project in and in the command prompt run:
+	rake db:setup
+
+Then, run the sever
+
+At this point go to which ever port the server runs on, typcally localhost:3000
+
+And bam! You're set!
+
+Hope you enjoy!
+
 Documentation and Support
 -------------------------
+
+All issues and inquiries should be forwarded to Jonathan Diaz at: jcdiaz1201@gmail.com
 
 Issues
 -------------
@@ -41,8 +54,12 @@ Similar Projects
 Contributing
 ------------
 
+Jonathan Diaz
+
 Credits
 -------
+
+Created by: Jonathan Diaz
 
 License
 -------
