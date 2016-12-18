@@ -6,7 +6,7 @@ class PostsController < ApplicationController
   def index
     @posts = Post.all.reverse_order
   end
-
+ 
   # GET /posts/1
   # GET /posts/1.json
   def show

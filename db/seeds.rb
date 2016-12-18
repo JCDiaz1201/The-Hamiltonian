@@ -35,3 +35,89 @@ User.create!(pseudonym: "Hamilton",
 			password: "password4",
 			password_confirmation: "password4",
 			admin: true)
+
+Post.create!(user_id: 1,
+			title: "This is a new post",
+			content: "This post has been made, and thank god lol")
+
+Post.create!(user_id: 1,
+			title: "title",
+			content: "This is what I can do")
+
+Post.create!(user_id: 2,
+			title: "I am Roosevelt",
+			content: "Hello World!")
+
+Post.create!(user_id: 3,
+			title: "I am Winston",
+			content: "And I am awesome")
+
+Post.create!(user_id: 5,
+			title: "This is it....",
+			content: "Zulton!")
+
+Post.create!(user_id: 4,
+			title: "Maybe?",
+			content: "Maybe not")
+
+Comment.create!(user_id: 1,
+				post_id: 3,
+				content: "Hmmm I guess so")
+
+Comment.create!(user_id: 1,
+				post_id: 4,
+				content: "I completely disagree")
+
+Comment.create!(user_id: 1,
+				post_id: 5,
+				content: "Holy cow!")
+
+Comment.create!(user_id: 3,
+				post_id: 5,
+				content: "No fox, no hunt")
+
+Comment.create!(user_id: 3,
+				post_id: 2,
+				content: "Kanye is one crazy dude")
+
+Comment.create!(user_id: 4,
+				post_id: 2,
+				content: "The cake is a lie...")
+
+Comment.create!(user_id: 5,
+				post_id: 1,
+				content: "This is somewhat ok")
+
+Comment.create!(user_id: 5,
+				post_id: 1,
+				content: "Oh wait nvm now I get it. Its awesome!")
+
+Comment.create!(user_id: 5,
+				post_id: 2,
+				content: "Dude, this is wack")
+
+Comment.create!(user_id: 5,
+				post_id: 3,
+				content: "Hook'em Horns!")
+
+Comment.create!(user_id: 5,
+				post_id: 5,
+				content: "Leggo1")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
