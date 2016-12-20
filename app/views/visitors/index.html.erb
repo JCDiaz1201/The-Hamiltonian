@@ -22,7 +22,7 @@
                 <% @posts.each do |blog| %>
                     <%= link_to post_path(blog.id) do %>
                         <h2 class="index-title"><%= blog.title %></h2>
-                        <h5 class="index-subtitle"><%= blog.content.truncate(100) %></h5>
+                        <h5 class="index-content"><%= blog.content.truncate(100) %></h5>
                         <p class="index-created-at">-<%= blog.user.pseudonym %>, <%= blog.created_at.strftime("%b %d, %Y") %></p>
                         <br>
                     <% end %>
