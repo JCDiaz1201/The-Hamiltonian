@@ -14,7 +14,7 @@
         <row>
           <div class="col-md-2"></div>
           <div class="col-md-8" align="center">
-            <p><%= simple_format(@post.content) %></p>   
+            <p class="show-post"><%= simple_format(@post.content)%></p>   
             <p id="blog-info">-<%= @post.user.pseudonym %>, <%= @post.created_at.strftime("%b %d, %Y") %></p> 
             <div>
               <h3>Comments</h3>

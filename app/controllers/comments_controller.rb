@@ -35,8 +35,11 @@ class CommentsController < ApplicationController
 	end
 
 	def destroy
-		@comment.destroy
-		redirect_to user_path(current_user)
+	    @comment.destroy
+	    respond_to do |format|
+	      format.html { redirect_to user_path(current_user), notice: 'Comment was successfully destroyed.' }
+	      format.json { head :no_content }
+	    end
 	end
 
 	private

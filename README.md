@@ -1,20 +1,5 @@
-Politicalapp
+The New Hamiltonian
 ================
-
-This application was generated with the [rails_apps_composer](https://github.com/RailsApps/rails_apps_composer) gem
-provided by the [RailsApps Project](http://railsapps.github.io/).
-
-Rails Composer is supported by developers who purchase our RailsApps tutorials.
-
-Problems? Issues?
------------
-
-Need help? Ask on Stack Overflow with the tag 'railsapps.'
-
-Your application contains diagnostics in the README file. Please provide a copy of the README file when reporting any issues.
-
-If the application doesn't work as expected, please [report an issue](https://github.com/RailsApps/rails_apps_composer/issues)
-and include the diagnostics.
 
 Ruby on Rails
 -------------
@@ -29,14 +14,19 @@ Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.
 Getting Started
 ---------------
 
-Simply switch to the directory you store the project in and in the command prompt run:
-	rake db:setup
+Open your command prompt
 
-Then, run the sever
+Switch to the directory containing the application
 
-At this point go to which ever port the server runs on, typcally localhost:3000
+In the command prompt type "rake db:setup" and press enter
 
-And bam! You're set!
+Once that is through type "rails server" to run the server
+
+At this point open your internet browser and type in "http://localhost:[What ever port number your computer assigns]"
+	
+	-In my case it is located on port 3000 so I enter: "http://localhost:3000"
+
+And bam! You're set! You should be able to view my app in all its glory.
 
 Hope you enjoy!
 
@@ -53,8 +43,6 @@ Similar Projects
 
 Contributing
 ------------
-
-Jonathan Diaz
 
 Credits
 -------
