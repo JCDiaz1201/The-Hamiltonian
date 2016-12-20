@@ -146,7 +146,7 @@ hr.small {
   .intro-header .site-heading,
   .intro-header .post-heading,
   .intro-header .page-heading {
-    padding: 150px 0;
+    padding: 200px 0;
   }
 }
 .intro-header .site-heading,
@@ -185,7 +185,7 @@ hr.small {
 .intro-header .post-heading .subheading {
   font-family: 'engravure';
   font-size: 24px;
-  margin: 10px 0 30px;
+  margin: 10px 0 50px;
   font-weight: 600;
 }
 .intro-header .post-heading .meta {
@@ -431,13 +431,9 @@ body {
   margin-bottom: -10px;
 }
 
-#post-index-background-img {
-  margin-top: -10px;
-  padding-bottom: 70px;
-}
-
 #blog-info {
   font-size: 15px;
+  text-align: right;
 }
 
 #show-post-edit {
@@ -454,7 +450,6 @@ body {
   font-family: 'engravure';
   font-size: 15px;
   color: black;
-  text-align: center;
 }
 
 .index-blog-info:hover,
@@ -493,9 +488,8 @@ body {
   padding: 5px;
 }
 
-.new-comment-link {
-  margin-left: 35px;
-  margin-bottom: 25px;
+.blog-comment-content {
+  text-align: center;
 }
 
 /*shared error form*/
@@ -536,6 +530,18 @@ body {
 #previous-comment-title {
   text-decoration: underline;
 }
+
+.intro-blog-header {
+  padding: 150px 0px 25px 0px;
+}
+
+#intro-header-img {
+  padding: 80px 0px 20px 0px; 
+}
+
+
+
+
 
 
 

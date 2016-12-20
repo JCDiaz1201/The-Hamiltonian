@@ -1,9 +1,5 @@
-<!-- Page Header -->
-<!-- Set your background image for this header on the line below. -->
-<br>
-<br>
 <p id="notice"><%= notice %></p>
-<header class="intro-header" style="background-image: url('http://fluper.ru/ffh/17/flag_amerika_oblaka_nebo_patriotizm_2560x1600.jpg')" id="post-index-background-img">
+<header class="intro-header" id="intro-header-img" style="background-image: url('http://fluper.ru/ffh/17/flag_amerika_oblaka_nebo_patriotizm_2560x1600.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -17,18 +13,26 @@
 <article>
     <div class="container">
         <div class="row">
-            <div id="post-lib-index">
-            <% @posts.each do |blog| %>
-                <%= link_to post_path(blog.id) do %>
-                <ul class="index-blog-info">
-                    <h2 class="index-blog-title" ><%= blog.title %></h2>
-                    <p><%= blog.user.pseudonym %>, <%= blog.created_at.strftime("%b %d, %Y") %></p>
-                </ul>
-                <% end %>
-            <% end %>
+          <div class="col-md-12">
+              <h1 align="center">Library</h1>
+          </div>
+          <div class="col-md-4" id="post-lib-index">
+              <% @posts.each do |blog| %>
+                  <%= link_to post_path(blog.id) do %>
+                  <ul class="index-blog-info"> 
+                      <h3 class="index-blog-title" ><%= blog.title %></h3>
+                      <p><%= blog.user.pseudonym %>, <%= blog.created_at.strftime("%b %d, %Y") %></p>
+                  </ul>
+                  <% end %>
+              <% end %>
+          </div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4"></div>
+          </div>
         </div>
     </div>
 </article>
+
 
 
 
