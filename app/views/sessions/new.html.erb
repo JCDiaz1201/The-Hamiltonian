@@ -9,7 +9,8 @@
     </div>
 </header>
 <div>
-  <div class="col-md-6 col-md-offset-3">
+  <div class="col-md-4"></div>
+  <div class="col-md-4" align="center">
     <%= form_for(:session, url: login_path) do |f| %>
 
       <%= f.label :email %>
@@ -18,17 +19,19 @@
       <%= f.label :password %>
       <%= f.password_field :password, class: 'form-control' %>
       <br>
+      <p id="notice"><%= notice %></p>
       <div class="pager">
       	<%= f.submit "Log in", class: "btn btn-primary" %>
       </div>
       <div class="pager">
-        <h3>New user?</h3>
+        <h3>Wish to Become a Member?</h3>
         <%= link_to "Sign up now!", new_user_path() %>
       </div>
       <br>
       <br>
     <% end %>
   </div>
+  <div class="col-md-4"></div>
 </div>
 <br>
 <br>

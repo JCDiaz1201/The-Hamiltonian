@@ -9,54 +9,51 @@
         </div>
     </div>
 </header>
-
 <div class="container" id="users-index">
   <div class="row">
-    <h2 align="left" class="user-index-title">Welcome, <%= @user.pseudonym %></h2>
+    <h2 class="user-index-greeting">Welcome, <%= @user.pseudonym %></h2>
         <br>
-        <div class="new-post-link" align="left">
+        <div class="new-post-link">
             <% if @user.admin? %>
-              <%= link_to 'New Blog', new_post_path %>
+              <%= link_to 'Wish to make a new Blog Entry?', new_post_path %>
             <% end %> 
         </div>
         <br>
           <% if @posts.length > 0 %>
-            <div class="col-md-6">
-                <h2 id="previous-post-title" align="left">Past Blogs</h2>
+            <div class="col-md-8">
+                <h2 id="previous-post-title">Past Blogs:</h2>
                 <div class="index-user-table">
                 	<% @posts.each do |blog| %>
-                        <div>
-                    		<%= link_to post_path(blog.id) do %>
-                    			<h3 class="index-user-info"><%= blog.title %></h3>
-                          <p><%= blog.content.truncate(100) %></p>
-                    			<p><%= link_to 'Edit', edit_post_path(blog.id) %> |
-                            	<%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></p>
-                    		<% end %>
-                        </div>
+                		<%= link_to post_path(blog.id) do %>
+                      <div class="users-blog-div">
+                        <h3 class="users-blog-title"><%= blog.title %></h3>
+                        <p class="users-blog-content"><%= blog.content.truncate(100) %></p>
+                      </div>
+                    <% end %>
+                  		<p class="users-blog-options"><%= link_to 'Edit', edit_post_path(blog.id) %> |
+                          <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></p>
                 	<% end %>
                 </div>
             </div>
           <% end %>
-          <div class="col-md-6">
+          <div class="col-md-4">
               <% if @user.comments.any? %>
-                  <h2 id="previous-comment-title">Comments</h2>
+                  <h2 id="previous-comment-title">Comments:</h2>
                   <ol class="comments" align=:"center">
                       <% @comments.each do |comment| %>
-                          <br>
-                            <p class="comment-user-info-1"><b>Comment:</b> <%= comment.content %></p>
-                          <%= link_to post_path(comment.post.id) do %>
-                            <p class="comment-user-info-2"><b>From article:</b> <%= comment.post.title %></p>
-                          <% end %>
-                            <p class="comment-user-info-3"><b>Created on:</b> <%= comment.created_at.strftime("%b %d, %Y") %></p>
-                            <p class="comment-user-info-edit"><%= link_to 'Edit', edit_comment_path(comment.id) %> | <%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %>
-                            </p>
-                          <br>
+                        <p class="comment-user-info-1"><b>Comment:</b> <%= comment.content %></p>
+                        <%= link_to post_path(comment.post.id) do %>
+                          <p class="comment-user-info-2"><b>From article:</b> <%= comment.post.title %></p>
+                        <% end %>
+                        <p class="comment-user-info-3"><b>Created on:</b> <%= comment.created_at.strftime("%b %d, %Y") %></p>
+                        <p class="comment-user-info-edit"><%= link_to 'Edit', edit_comment_path(comment.id) %> | <%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></p>
                       <% end %>
                   </ol>
               <% end %>
           </div>
     </div>
 </div>
+
 
 
 

@@ -139,14 +139,14 @@ hr.small {
 .intro-header .post-heading,
 .intro-header .page-heading {
   font-family: 'engravure';
-  padding: 100px 0 50px;
+  padding: 100px 0 25px;
   color: #aa9655;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
   .intro-header .post-heading,
   .intro-header .page-heading {
-    padding: 200px 0;
+    padding: 150px 0px 75px 0px;
   }
 }
 .intro-header .site-heading,
@@ -420,7 +420,7 @@ body {
   font-size: 25px;
 }
 
-.user-index-title {
+.user-index-greeting {
   font-family: 'engravure';
   font-size: 35px;
 }
@@ -458,9 +458,32 @@ body {
   color: #7a7a7a
 }
 
-.index-subtitle {
+.index-content {
   margin-left: 20px;
   margin-bottom: -20px;
+}
+
+/* user show page content format */
+.users-blog-div {
+  color: black;
+}
+
+.users-blog-title {
+  margin-bottom: -20px;
+}
+
+.users-blog-content {
+  margin-bottom: -20px;
+  margin-left: 20px;
+}
+
+.users-blog-options  {
+  margin-left: 40px;
+  color: black;
+}
+
+.users-blog-div:hover {
+  color: #878787;
 }
 
 .index-user-info {
@@ -470,10 +493,15 @@ body {
 .index-user-info:hover,
 .index-user-info:focus {
   text-decoration: none;
-  color: #7a7a7a
+  color: #a7a7a7
+}
+
+.index-user-table {
+  margin-left: 25px;
 }
 
 .new-post-link {
+  margin-left: 25px;
   font-size: 25px;
   font-family: 'engravure';
   color: black;
@@ -523,11 +551,7 @@ body {
   text-indent: 80px;
 }
 
-#previous-post-title {
-  text-decoration: underline;
-}
-
-#previous-comment-title {
+.blog-library {
   text-decoration: underline;
 }
 
@@ -536,12 +560,17 @@ body {
 }
 
 #intro-header-img {
-  padding: 80px 0px 20px 0px; 
+  padding: 125px; 
 }
 
+#about-header {
+  padding: 25px 0px 0px 0px; 
+}
 
-
-
+.blog-library {
+  margin: 10px;
+  padding: 20px;
+}
 
 
 

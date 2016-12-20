@@ -1,4 +1,3 @@
-<p id="notice"><%= notice %></p>
 <header class="intro-header" id="intro-header-img" style="background-image: url('http://fluper.ru/ffh/17/flag_amerika_oblaka_nebo_patriotizm_2560x1600.jpg')">
     <div class="container">
         <div class="row">
@@ -9,14 +8,14 @@
         </div>
     </div>
 </header>
-<!-- Post Content -->
+<p id="notice"><%= notice %></p>
 <article>
     <div class="container">
         <div class="row">
           <div class="col-md-12">
-              <h1 align="center">Library</h1>
+              <h1 class="blog-library" align="center">Library</h1>
           </div>
-          <div class="col-md-4" id="post-lib-index">
+          <div class="col-md-8" id="post-lib-index">
               <% @posts.each do |blog| %>
                   <%= link_to post_path(blog.id) do %>
                   <ul class="index-blog-info"> 
@@ -26,8 +25,8 @@
                   <% end %>
               <% end %>
           </div>
-          <div class="col-md-4"></div>
-          <div class="col-md-4"></div>
+          <div class="col-md-2"></div>
+          <div class="col-md-2"></div>
           </div>
         </div>
     </div>

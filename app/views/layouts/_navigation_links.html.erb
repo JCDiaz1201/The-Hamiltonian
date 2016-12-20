@@ -13,7 +13,7 @@
     <%= link_to 'Blog Library', posts_path() %>
 </li>
 <li>
-    <%= link_to 'Contributors', users_path() %>
+    <%= link_to 'Contributors', show_path(@user) %>
 </li>
 <li>
 	<% if current_user %>
