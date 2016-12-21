@@ -1,7 +1,6 @@
 body {
   font-family: 'engravure';
   font-size: 20px;
-  color: #373737;
 }
 p {
   line-height: 1.5;
@@ -498,11 +497,6 @@ body {
   margin-left: 25px;
 }
 
-#new-post-link {
-  font-family: 'engravure';
-  color: black;
-}
-
 #user-index-query {
   margin-left: 20px;
   font-family: 'engravure';
@@ -518,8 +512,10 @@ body {
   padding: 5px;
 }
 
-.blog-comment-content {
-  text-align: center;
+#blog-comment-content {
+  background-color: white;
+  border-radius: 25px;
+  border: 2px solid #af9d61;
 }
 
 /*shared error form*/
@@ -578,6 +574,32 @@ body {
   font-family: 'engravure';
   font-size: 25px;
 }
+
+/*user homepage information*/
+#new-post-link {
+  font-family: 'engravure';
+  color: black;
+  background-color: white;
+  border-radius: 25px;
+  border: 2px solid #af9d61;
+}
+
+#all-user-post {
+  background-color: white;
+  border-radius: 25px;
+  padding: 10px;
+  border: 2px solid #af9d61;
+}
+
+#all-user-comment {
+  background-color: white;
+  border-radius: 25px;
+  padding: 10px;
+  border: 2px solid #af9d61;
+}
+
+
+
 
 
 

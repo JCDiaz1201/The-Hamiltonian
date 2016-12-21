@@ -17,23 +17,23 @@
             <p class="show-post"><%= simple_format(@post.content)%></p>   
             <p id="blog-info">-<%= @post.user.pseudonym %>, <%= @post.created_at.strftime("%b %d, %Y") %></p> 
             <div>
-              <h3>Comments</h3>
+              <h3 align="center">Comments</h3>
             </div>
           </div>
           <div class="col-md-2"></div>
-          <div class="col-md-12" class="blog-comment-content">
-            <ol>
-              <% @comments.each do |comment| %>
-                  <div>
-                      <div>
-                          <%= comment.user.pseudonym %>(<%= comment.created_at.strftime("%b %d, %Y") %>)- <%= comment.content %>
-                      </div>
-                      <br>
-                  </div>
-              <% end %>
-            </ol>
-          </div>
+          <% if @comments.length > 0 %>
+            <div class="col-md-12" id="blog-comment-content">
+              <ol>
+                <% @comments.each do |comment| %>
+                  <p>
+                    <%= comment.user.pseudonym %>(<%= comment.created_at.strftime("%b %d, %Y") %>)- <%= comment.content %>
+                  </p>
+                <% end %>
+              </ol>
+            </div>
+          <% end %>
           <div class="col-md-12 text-center">
+            <br>
             <% if current_user %>
               <div class="new-comment-link">
                 <%= link_to 'New Comment', new_post_comment_path(@post.id) %>
@@ -47,3 +47,4 @@
         </row>
     </div>
 </article>
+

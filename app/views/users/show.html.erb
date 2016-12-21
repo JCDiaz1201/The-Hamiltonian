@@ -19,24 +19,24 @@
       <div class="col-md-12">
         <%= render 'layouts/messages' %>
       </div>
-      <div class="col-md-8">
-        <% if @posts.length > 0 %>
-          <h2 id="previous-post-title">Past Blogs:</h2>
-          <div class="index-user-table">
-          	<% @posts.each do |blog| %>
-          		<%= link_to post_path(blog.id) do %>
-                <div class="users-blog-div">
-                  <h3 class="users-blog-title"><%= blog.title %></h3>
-                  <p class="users-blog-content"><%= blog.content.truncate(100) %></p>
-                </div>
-              <% end %>
-            		<p class="users-blog-options"><%= link_to 'Edit', edit_post_path(blog.id) %> |
-                    <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></p>
-          	<% end %>
-          </div>
-        <% end %>
+      <div class="col-md-8" id="all-user-post">
+          <% if @posts.length > 0 %>
+            <h2 id="previous-post-title">Past Blogs:</h2>
+            <div class="index-user-table">
+            	<% @posts.each do |blog| %>
+            		<%= link_to post_path(blog.id) do %>
+                  <div class="users-blog-div">
+                    <h3 class="users-blog-title"><%= blog.title %></h3>
+                    <p class="users-blog-content"><%= blog.content.truncate(100) %></p>
+                  </div>
+                <% end %>
+              		<p class="users-blog-options"><%= link_to 'Edit', edit_post_path(blog.id) %> |
+                      <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+            	<% end %>
+            </div>
+          <% end %>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4" id="all-user-comment">
           <% if @user.comments.any? %>
             <h2 id="previous-comment-title">Comments:</h2>
             <ol class="comments" align=:"center">
@@ -51,6 +51,7 @@
               </ol>
           <% end %>
       </div>
+      <div class="col-md-1"></div>
     </div>
 </div>
 
