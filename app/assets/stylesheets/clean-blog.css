@@ -202,39 +202,7 @@ hr.small {
     font-size: 30px;
   }
 }
-.post-preview > a {
-}
 
-.post-preview > a:hover,
-.post-preview > a:focus {
-  text-decoration: none;
-  color: #878787;
-}
-.post-preview > a > .post-title {
-  font-size: 30px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-.post-preview > a > .post-subtitle {
-  font-size: 15px;
-  margin: 0;
-  font-weight: 300;
-  margin-bottom: 10px;
-}
-.post-preview > .post-meta {
-  color: #808080;
-  font-size: 18px;
-  font-style: italic;
-  margin-top: 0;
-}
-.post-preview > .post-meta > a {
-  text-decoration: none;
-  color: #404040;
-}
-.post-preview > .post-meta > a:hover,
-.post-preview > .post-meta > a:focus {
-  /*text-decoration: underline;*/
-}
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
     font-size: 36px;
@@ -394,15 +362,6 @@ body {
   margin-left: 20px;
 }
 
-.index-created-at {
-  color: #373737;
-  margin-left: 20px;
-}
-
-#post-lib-index {
-  font-family: 'engravure';
-}
-
 #users-index {
   margin-top: 40px;
 }
@@ -417,20 +376,10 @@ body {
   font-size: 25px;
 }
 
-.user-index-greeting {
-  font-family: 'engravure';
-  font-size: 35px;
-}
-
 #navbar-default-id {
   background-color: black;
   margin-top: -5px;
   margin-bottom: -10px;
-}
-
-#blog-info {
-  font-size: 15px;
-  text-align: right;
 }
 
 #show-post-edit {
@@ -439,43 +388,8 @@ body {
   margin: 10px;
 }
 
-.index-blog-title {
-  margin-bottom: -25px;
-}
-
-.index-blog-info {
-  font-family: 'engravure';
-  font-size: 15px;
-  color: black;
-}
-
-.index-blog-info:hover,
-.index-blog-info:focus {
-  text-decoration: none;
-  color: #7a7a7a
-}
-
-.index-content {
-  margin-left: 20px;
-  margin-bottom: -20px;
-}
-
 /* user show page content format */
 .users-blog-div {
-  color: black;
-}
-
-.users-blog-title {
-  margin-bottom: -20px;
-}
-
-.users-blog-content {
-  margin-bottom: -20px;
-  margin-left: 20px;
-}
-
-.users-blog-options  {
-  margin-left: 40px;
   color: black;
 }
 
@@ -493,16 +407,6 @@ body {
   color: #a7a7a7
 }
 
-.index-user-table {
-  margin-left: 25px;
-}
-
-#user-index-query {
-  margin-left: 20px;
-  font-family: 'engravure';
-  color: black;
-}
-
 .field-content {
   width: 700px;
 }
@@ -510,14 +414,6 @@ body {
 /*blog comment box for show page*/
 .blog-comment-box {
   padding: 5px;
-}
-
-#blog-comment-content {
-  margin-bottom: 2px;
-  padding: 5px;
-  background-color: white;
-  border-radius: 25px;
-  border: 2px solid #af9d61;
 }
 
 /*shared error form*/
@@ -534,25 +430,6 @@ body {
   .form-control {
     color: $state-danger-text;
   }
-}
-
-.comment-user-info-2 {
-  text-indent: 20px;
-  margin-top: -20px;
-}
-
-.comment-user-info-3 {
-  margin-top: -20px;
-  text-indent: 50px;
-}
-
-.comment-user-info-edit {
-  margin-top: -20px;
-  text-indent: 80px;
-}
-
-.blog-library {
-  text-decoration: underline;
 }
 
 .intro-blog-header {
@@ -572,12 +449,9 @@ body {
   padding: 20px;
 }
 
-.show-post {
-  font-family: 'engravure';
-  font-size: 25px;
-}
 
-/*user homepage information*/
+
+
 
 
 

@@ -1,3 +1,51 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.show-post {
+  font-family: 'engravure';
+  font-size: 25px;
+}
+
+#blog-info {
+  font-size: 15px;
+  text-align: right;
+}
+
+#blog-comment-content {
+  margin-bottom: 2px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 25px;
+  border: 2px solid #af9d61;
+}
+
+.blog-library {
+  text-decoration: underline;
+}
+
+#post-lib-index {
+  font-family: 'engravure';
+}
+
+.index-blog-info {
+  font-family: 'engravure';
+  font-size: 15px;
+  color: black;
+}
+
+.index-blog-info:hover,
+.index-blog-info:focus {
+  text-decoration: none;
+  color: #7a7a7a
+}
+
+.index-blog-title {
+  margin-bottom: -25px;
+}
+
+
+
+
+
+
