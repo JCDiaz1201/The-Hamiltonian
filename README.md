@@ -22,7 +22,7 @@ In the command prompt type "rake db:setup" and press enter
 
 Once that is through type "rails server" to run the server
 
-At this point open your internet browser and type in "http://localhost:[What ever port number your computer assigns]"
+At this point open your internet browser and type in "http://localhost:[port number]"
 	
 	-In my case it is located on port 3000 so I enter: "http://localhost:3000"
 

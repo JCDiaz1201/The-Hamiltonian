@@ -11,7 +11,6 @@ class CommentsController < ApplicationController
 	   @user = current_user
 	   @comment = @post.comments.create(comment_params)
 	   @comment.user = current_user
-	   # debugger
 		if @comment.save
 			redirect_to @post
 		else
