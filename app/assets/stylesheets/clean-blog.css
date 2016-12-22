@@ -578,27 +578,7 @@ body {
 }
 
 /*user homepage information*/
-#new-post-link {
-  font-family: 'engravure';
-  color: black;
-  background-color: white;
-  border-radius: 25px;
-  border: 2px solid #af9d61;
-}
 
-#all-user-post {
-  background-color: white;
-  border-radius: 25px;
-  padding: 10px;
-  border: 2px solid #af9d61;
-}
-
-#all-user-comment {
-  background-color: white;
-  border-radius: 25px;
-  padding: 10px;
-  border: 2px solid #af9d61;
-}
 
 
 
