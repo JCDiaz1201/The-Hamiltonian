@@ -1,4 +1,4 @@
-The New Hamiltonian
+The Hamiltonian
 ================
 
 Ruby on Rails
