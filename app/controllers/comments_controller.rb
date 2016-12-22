@@ -20,7 +20,7 @@ class CommentsController < ApplicationController
 	end
 
 	def show
-	end
+	end 
 
 	def update
 		respond_to do |format|

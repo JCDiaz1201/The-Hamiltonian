@@ -19,9 +19,7 @@ h6 {
   font-weight: 400;
   text-decoration: none;
 }
-a {
-  color: #404040;
-}
+
 a:hover,
 a:focus {
   color: black;

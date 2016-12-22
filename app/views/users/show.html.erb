@@ -11,15 +11,15 @@
 <div class="container" id="users-index">
   <div class="row">
 
+      <div class="col-md-12">
+        <%= render 'layouts/messages' %>
+      </div>
+
       <div class="col-md-12" id="new-post-link">
         <h2 class="user-index-greeting">Welcome, <%= @user.pseudonym %></h2>
         <% if @user.admin? %>
           <h3 id="user-index-query"><%= link_to 'Wish to make a new Blog Entry?', new_post_path %></h3>
         <% end %> 
-      </div>
-
-      <div class="col-md-12">
-        <%= render 'layouts/messages' %>
       </div>
 
       <div class="col-md-8" id="all-user-post">
