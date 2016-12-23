@@ -9,10 +9,14 @@
       </ul>
     </div>
   <% end %>
+
   <div class="field-content">
+    <% f.hidden_field :parent_id %>
+    <% f.hidden_field :post_id %>
     <%= f.label :content %><br>
     <%= f.text_area :content, size: "80x15" %>
   </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -1,8 +1,24 @@
-<br>
-<br>
-<br>
-<div class="new-post-form" style="position: relative; left: 50px;">
-	<h3>New Comment</h3>
-	<%= render 'new_comment_form' %>
-	<%= link_to 'Back', posts_path %>
+<header class="intro-blog-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h2 align="center"><%= @post.title %></h2>
+                    <h3 align="center">New Comment</h3>
+                    <% if @comment.parent %>
+                        <h3 align="center">for</h3>
+                        <h3 align="center"><%= @comment.parent.content%></h3>
+                    <% end %>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+  <row>
+		<div class="new-post-form" align="center">
+			<%= render 'new_comment_form' %>
+			<%= link_to 'Back', posts_path %>
+		</div>
+  </row>
 </div>

@@ -8,10 +8,12 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-gem "rspec"
-gem "bcrypt", '3.1.11'
+gem 'rspec'
+gem 'bcrypt', '3.1.11'
 gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
-gem "pundit"
+gem 'pundit'
+gem 'pry'
+gem 'ancestry'
 group :development, :test do
   gem 'byebug'
   gem 'spring'
