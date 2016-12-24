@@ -27,11 +27,7 @@
           <ol>
             <% @comments.each do |comment| %>
               <div id="blog-comment-content">
-                <%= comment.user.pseudonym %>(<%= comment.created_at.strftime("%b %d, %Y") %>)- 
-                <%= comment.content %>
-                <% if current_user %>
-                 | <%= link_to "Reply", new_post_comment_path(@post, :parent_id => comment) %>
-                <% end %>
+                <%= comment.user.pseudonym %>(<%= comment.created_at.strftime("%b %d, %Y") %>)- <%= comment.content %>
               </div>
             <% end %>
           </ol>

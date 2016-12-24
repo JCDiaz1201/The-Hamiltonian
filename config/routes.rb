@@ -9,9 +9,8 @@ Rails.application.routes.draw do
   resources 		:visitors, only:[:index, :show]
   resources 		:posts
   resources 		:users
-
   
-  resources :posts do 
+  resources :posts, :shallow => true do 
     resources :comments
   end
 end
