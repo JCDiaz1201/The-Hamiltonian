@@ -22,23 +22,25 @@
         <% end %> 
       </div>
 
-      <div class="col-md-8" id="all-user-post">
-          <% if @posts.length > 0 %>
-            <h2 id="previous-post-title">Past Blogs:</h2>
-            <div class="index-user-table">
-            	<% @posts.each do |blog| %>
-            		<%= link_to post_path(blog.id) do %>
-                  <div class="users-blog-div">
-                    <h3 class="users-blog-title"><%= blog.title %></h3>
-                    <p class="users-blog-content"><%= blog.content.truncate(100) %></p>
-                  </div>
-                <% end %>
-              		<p class="users-blog-options"><%= link_to 'Edit', edit_post_path(blog.id) %> |
-                      <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></p>
-            	<% end %>
-            </div>
-          <% end %>
-      </div>
+      <% if current_user.admin? %>
+        <div class="col-md-8" id="all-user-post">
+            <% if @posts.length > 0 %>
+              <h2 id="previous-post-title">Past Blogs:</h2>
+              <div class="index-user-table">
+              	<% @posts.each do |blog| %>
+              		<%= link_to post_path(blog.id) do %>
+                    <div class="users-blog-div">
+                      <h3 class="users-blog-title"><%= blog.title %></h3>
+                      <p class="users-blog-content"><%= blog.content.truncate(100) %></p>
+                    </div>
+                  <% end %>
+                		<p class="users-blog-options"><%= link_to 'Edit', edit_post_path(blog.id) %> |
+                        <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+              	<% end %>
+              </div>
+            <% end %>
+        </div>
+      <% end %>
 
       <div class="col-md-4" id="all-user-comment">
           <% if @user.comments.any? %>
@@ -53,6 +55,12 @@
                 <p class="comment-user-info-edit"><%= link_to 'Edit', edit_comment_path(comment.id) %> | <%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></p>
                   <% end %>
               </ol>
+          <% else %>
+            <h2 id="previous-comment-title">Comments:</h2>
+            <p>You do not have any comments! Please feel free to browse the blogs and tell us what you think!</p>
+            <div align="center">
+              <%= link_to 'Blog Library', posts_path() %>
+            </div>
           <% end %>
       </div>
       

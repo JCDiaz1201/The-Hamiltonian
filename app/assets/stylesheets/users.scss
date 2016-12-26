@@ -34,6 +34,7 @@
 
 .index-user-table {
   margin-left: 25px;
+  font-family: 'engravure';
 }
 
 .users-blog-title {
@@ -60,11 +61,24 @@
 .comment-user-info-2 {
   text-indent: 20px;
   margin-top: -20px;
+
 }
 
 .comment-user-info-3 {
   margin-top: -20px;
   text-indent: 50px;
+}
+
+#previous-post-title {
+  color: black;
+}
+
+#previous-comment-title{
+  color: black;
+}
+
+.comments {
+  color: black;
 }
 
 

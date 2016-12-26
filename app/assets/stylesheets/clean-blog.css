@@ -6,9 +6,11 @@ p {
   line-height: 1.5;
   margin: 30px 0;
 }
-p a {
-  /*text-decoration: none;
-*/}
+a {
+  color: black;
+  text-decoration: none;
+
+}
 h1,
 h2,
 h3,
@@ -22,7 +24,7 @@ h6 {
 
 a:hover,
 a:focus {
-  color: black;
+  color: gray;
   text-decoration: none;
 }
 a img:hover,
@@ -387,9 +389,6 @@ body {
 }
 
 /* user show page content format */
-.users-blog-div {
-  color: black;
-}
 
 .users-blog-div:hover {
   color: #878787;
@@ -403,10 +402,6 @@ body {
 .index-user-info:focus {
   text-decoration: none;
   color: #a7a7a7
-}
-
-.field-content {
-  width: 700px;
 }
 
 /*blog comment box for show page*/
@@ -447,7 +442,24 @@ body {
   padding: 20px;
 }
 
+.blog-author-date {
+  margin-left: 20px;
+}
 
+
+
+/*a {
+  color: black;
+
+  &:visited {
+    color: black;
+  }
+
+  &:hover {
+    color: grey;
+    background-color: #000;
+  }
+}*/
 
 
 

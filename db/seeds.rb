@@ -23,29 +23,29 @@ User.create!(pseudonym: "Publius",
 			password_confirmation: "Lv1234567",
 			admin: true)
 
-User.create!(pseudonym: "Roosevelt",
+User.create!(pseudonym: "Trolololol",
 			email: "Roosevelt1858@gmail.com",
 			password: "password1",
 			password_confirmation: "password1",
-			admin: true)
+			admin: false)
 
 User.create!(pseudonym: "Churchill",
 			email: "Churchill1874@gmail.com",
 			password: "password2",
 			password_confirmation: "password2",
-			admin: true)
+			admin: false)
 
 User.create!(pseudonym: "Frederick",
 			email: "prussiagov@gmail.com",
 			password: "passowrd3",
 			password_confirmation: "passowrd3",
-			admin: true)
+			admin: false)
 
 User.create!(pseudonym: "Hamilton",
 			email: "fatherofthenation@gmail.com",
 			password: "password4",
 			password_confirmation: "password4",
-			admin: true)
+			admin: false)
 
 Post.create!(user_id: 1,
 			title: "We're on the Wrong Track: Here is Why",
@@ -55,19 +55,19 @@ Post.create!(user_id: 1,
 			title: "We're On the Tight Track: Stay the Course",
 			content: "#{default_content}")
 
-Post.create!(user_id: 2,
+Post.create!(user_id: 1,
 			title: "Are China-US Relations Destined for Conflict?",
 			content: "#{default_content}")
 
-Post.create!(user_id: 3,
+Post.create!(user_id: 1,
 			title: "Britain has left the EU and that is Tragic",
 			content: "#{default_content}")
 
-Post.create!(user_id: 5,
+Post.create!(user_id: 1,
 			title: "We Should be Easing Relations with Russia",
 			content: "#{default_content}")
 
-Post.create!(user_id: 4,
+Post.create!(user_id: 1,
 			title: "America must Decide what kind of Country it Wants to Be",
 			content: "#{default_content}")
 
@@ -93,7 +93,7 @@ Comment.create!(user_id: 3,
 
 Comment.create!(user_id: 4,
 				post_id: 2,
-				content: "The cake is a lie...")
+				content: "Let us make our own posts!")
 
 Comment.create!(user_id: 5,
 				post_id: 1,

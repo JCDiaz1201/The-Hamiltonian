@@ -1,14 +1,22 @@
-<br>
-<br>
-<div class="edit-blog-post">
-	<h1>Edit Post</h1>
-	<%= render 'form' %>
-	<%= link_to 'Show', @post %> |
-	<%= link_to 'Back', posts_path %>
+<header class="intro-blog-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h2 align="center">Edit Post</h2>
+                    <h3 align="center"><%= @post.title %></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+  <row>
+		<div class="edit-blog-post" align="center">
+			<%= render 'form' %>
+			<%= link_to 'Back', posts_path %>
+		</div>
+  </row>
 </div>
-
-
-
-
 
 
