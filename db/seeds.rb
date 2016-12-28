@@ -47,29 +47,39 @@ User.create!(pseudonym: "Hamilton",
 			password_confirmation: "password4",
 			admin: false)
 
-Post.create!(user_id: 1,
+
+
+post1 = Post.create!(user_id: 1,
 			title: "We're on the Wrong Track: Here is Why",
-			content: "#{default_content}")
+			content: "#{default_content}",
+			photo: File.new('app/assets/images/tracks.jpg'))
 
-Post.create!(user_id: 1,
-			title: "We're On the Tight Track: Stay the Course",
-			content: "#{default_content}")
+post2 = Post.create!(user_id: 1,
+			title: "No Other Country is better Positioned for the 21st Century",
+			content: "#{default_content}",
+			photo: File.new('app/assets/images/nyc.jpg'))
 
-Post.create!(user_id: 1,
+post3 = Post.create!(user_id: 1,
 			title: "Are China-US Relations Destined for Conflict?",
-			content: "#{default_content}")
+			content: "#{default_content}",
+			photo: File.new('app/assets/images/war.jpg'))
 
-Post.create!(user_id: 1,
+post4 = Post.create!(user_id: 1,
 			title: "Britain has left the EU and that is Tragic",
-			content: "#{default_content}")
+			content: "#{default_content}",
+			photo: File.new('app/assets/images/brexit.jpg'))
 
-Post.create!(user_id: 1,
+post5 = Post.create!(user_id: 1,
 			title: "We Should be Easing Relations with Russia",
-			content: "#{default_content}")
+			content: "#{default_content}",
+			photo: File.new('app/assets/images/diplomacy.jpg'))
 
-Post.create!(user_id: 1,
+
+post6 = Post.create!(user_id: 1,
 			title: "America must Decide what kind of Country it Wants to Be",
-			content: "#{default_content}")
+			content: "#{default_content}",
+			photo: File.new('app/assets/images/road.jpg'))
+
 
 Comment.create!(user_id: 1,
 				post_id: 3,
