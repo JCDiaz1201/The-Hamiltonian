@@ -13,6 +13,7 @@
 }
 
 .post-preview > a {
+  color: #373737
 }
 
 .post-preview > a:hover,
@@ -20,6 +21,7 @@
   text-decoration: none;
   color: #878787;
 }
+
 .post-preview > a > .post-title {
   font-size: 30px;
   margin-top: 30px;
@@ -44,4 +46,8 @@
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
   /*text-decoration: underline;*/
+}
+
+#index-post-info {
+  margin-top: -20px;
 }

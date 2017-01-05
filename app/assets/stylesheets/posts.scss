@@ -26,18 +26,13 @@
 
 #post-lib-index {
   font-family: 'engravure';
+  color: #373737
 }
 
-.index-blog-info {
-  font-family: 'engravure';
-  font-size: 15px;
-  color: black;
-}
-
-.index-blog-info:hover,
-.index-blog-info:focus {
+#post-lib-index:hover,
+#post-lib-index:focus {
   text-decoration: none;
-  color: #7a7a7a
+  color: #7a7a7a;
 }
 
 .index-blog-title {

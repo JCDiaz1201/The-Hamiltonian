@@ -18,7 +18,7 @@
 </header>
 <!-- Main Content -->
 <div class="container">
-    <div class="row">
+    <div class="row" id="index-post-menu">
        <div class="post-preview">
             <% @posts.each do |blog| %>
                 <%= link_to post_path(blog.id) do %>

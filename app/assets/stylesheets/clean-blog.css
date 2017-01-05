@@ -367,7 +367,9 @@ body {
 }
 
 .background-color-class {
-  background-color: #e1e1e3;
+  /*background-color: #e1e1e3;*/
+  /*background-color: #D0CABF;*/
+  background-color: #F4F4F4;
 }
 
 .pseudonym-name {
@@ -377,7 +379,7 @@ body {
 }
 
 #navbar-default-id {
-  background-color: black;
+  background-color: #373737;
   margin-top: -5px;
   margin-bottom: -10px;
 }
@@ -444,10 +446,6 @@ body {
 
 .blog-author-date {
   margin-left: 20px;
-}
-
-#index-post-info {
-  margin-top: -20px;
 }
 
 /*a {
