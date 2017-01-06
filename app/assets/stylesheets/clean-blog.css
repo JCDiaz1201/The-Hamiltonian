@@ -436,6 +436,10 @@ body {
   border-bottom: solid #af9d61;
 }
 
+#navbar-default-id {
+  border-bottom: solid #af9d61; 
+}
+
 #about-header {
   padding: 25px 0px 0px 0px; 
 }
