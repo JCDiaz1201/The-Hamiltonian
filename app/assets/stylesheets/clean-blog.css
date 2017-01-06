@@ -432,7 +432,8 @@ body {
 }
 
 #intro-header-img {
-  padding: 125px; 
+  padding: 125px;
+  border-bottom: solid #af9d61;
 }
 
 #about-header {
