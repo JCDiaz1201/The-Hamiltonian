@@ -13,6 +13,7 @@ gem "bcrypt", '3.1.11'
 gem "pundit"
 gem "paperclip", "~> 5.0.0"
 gem 'jquery-turbolinks'
+gem 'puma'
 group :development, :test do
   gem 'byebug'
   gem 'spring'
