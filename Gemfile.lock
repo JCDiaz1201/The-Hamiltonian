@@ -97,6 +97,7 @@ GEM
       cocaine (~> 0.5.5)
       mime-types
       mimemagic (~> 0.3.0)
+    pg (0.18.4)
     puma (3.7.1)
     pundit (1.1.0)
       activesupport (>= 3.0.0)
@@ -188,6 +189,7 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks
   paperclip (~> 5.0.0)
+  pg (= 0.18.4)
   puma
   pundit
   rails (= 4.2.0)
@@ -204,4 +206,4 @@ RUBY VERSION
    ruby 2.2.4p230
 
 BUNDLED WITH
-   1.14.4
+   1.14.5
