@@ -67,7 +67,7 @@ post3 = Post.create!(user_id: 1,
 post4 = Post.create!(user_id: 1,
 			title: "Britain has left the EU and that is Tragic",
 			content: "#{default_content}",
-			photo: File.new('app/assets/images/brexit.jpg'))
+			photo: File.new('app/assets/images/Brexit.jpg'))
 
 post5 = Post.create!(user_id: 1,
 			title: "We Should be Easing Relations with Russia",
