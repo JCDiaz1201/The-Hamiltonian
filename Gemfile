@@ -12,6 +12,7 @@ gem "bcrypt", '3.1.11'
 gem "pundit"
 gem "paperclip", "~> 5.0.0"
 gem 'jquery-turbolinks'
+gem 'puma'
 gem 'bootstrap-sass'
 
 group :development, :test do
