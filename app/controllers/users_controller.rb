@@ -5,8 +5,8 @@ class UsersController < ApplicationController
 
 	def show
 		@user = User.find(params[:id]); nil
-		@posts = @user.posts.all.limit(5).reverse_order; nil 
-		@comments = @user.comments.all.limit(4).reverse_order; nil
+		@posts = @user.posts.all; nil 
+		@comments = @user.comments.all; nil
 	end
 
 	def new
@@ -33,4 +33,5 @@ class UsersController < ApplicationController
 	      params.require(:user).permit(:pseudonym, :email, :password, :password_confirmation)
 	    end
 end
+
 
