@@ -5,11 +5,16 @@
     <title>
       <%="The Hamiltonian"%>
       <% if @post %>
-
         <%= ": "%> <%= @post.title %>
       <% end %>
     </title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "The Hamiltonian" %>">
+    <meta name="description"
+      <% if @post %>
+        content="<%= "The Hamiltonian: " %> <%= @post.title %>"
+      <% else %>
+        content="<%= "The Hamiltonian" %>">
+      <% end %>
+    >
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => false %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
     <%= csrf_meta_tags %>
