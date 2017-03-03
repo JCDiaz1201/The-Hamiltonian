@@ -14,6 +14,8 @@ gem "paperclip", "~> 5.0.0"
 gem 'jquery-turbolinks'
 gem 'puma'
 gem 'bootstrap-sass'
+gem 'aws-sdk', '~> 2.3'
+
 
 group :development, :test do
   gem 'byebug'
