@@ -32,9 +32,7 @@
             <% @comments.each do |comment| %>
               <div id="blog-comment-content">
                 <%= comment.user.pseudonym %>(<%= comment.created_at.strftime("%b %d, %Y") %>)- <%= comment.content %>
-                <% if current_user.admin? %>
-                  <%= link_to '(Admin Action: Destroy)', comment, method: :delete, data: { confirm: 'Are you sure?' }%>
-                <% end %>
+
               </div>
             <% end %>
           </ol>
