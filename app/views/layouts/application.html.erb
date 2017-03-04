@@ -3,11 +3,16 @@
   <head class="background-color-class">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%="The Hamiltonian"%></title>
-    <meta name="description"
+
+    <meta property="og:title" content="The Hamiltonian">
+    <meta property="og:description"
       <% if @post %>
         content="<%= "The Hamiltonian:" %> <%= @post.title %>"
+      <% else %>
+        content="The Hamiltonian: A Center for American Statecraft"
       <% end %>
     >
+
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => false %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
     <%= csrf_meta_tags %>
