@@ -1,7 +1,7 @@
 <%# add navigation links to this file %>
 <li>
 	<% if current_user %>
-    	<%= link_to 'Home', user_path(current_user) %>
+    	<%= link_to current_user.pseudonym, user_path(current_user) %>
     <% else %>
     	<%= link_to 'Home', root_path() %>
     <% end %>
