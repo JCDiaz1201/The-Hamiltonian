@@ -18,11 +18,12 @@ class UsersController < ApplicationController
 
 		if @user.save
 			UserMailer.registration_confirmation(@user).deliver
-			format.html { redirect_to root_url, notice: 'Please confirm your email address to continue' }
+			flash[:success] = 'Please confirm your email address to continue'
+			redirect_to root_url
 			# log_in @user
 			# redirect_to @user
 		else
-			format.html { notice: 'Please confirm your email address to continue' }
+			flash.now[:error] = 'Something went wrong!'
 			render 'new'
 		end
 	end
@@ -31,8 +32,7 @@ class UsersController < ApplicationController
     user = User.find_by_confirm_token(params[:id])
     if user
       user.email_activate
-      flash[:success] = "Welcome to The Hamiltonian! Your email has been confirmed.
-      Please sign in to continue."
+      flash[:success] = "Welcome to The Hamiltonian! Your email has been confirmed. Please sign in to continue."
       redirect_to login_path
     else
       flash[:error] = "Sorry. User does not exist"

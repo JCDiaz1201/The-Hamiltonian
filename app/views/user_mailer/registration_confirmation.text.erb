@@ -11,10 +11,10 @@
 <div class="container" id="users-index">
   <div class="row">
     <h3 align="center" class="user-index-title">Email Confirmation</h3>
-			<p>Hi <%= @user.pseudonym %></p>
-
-			<p>Thanks for registering! To confirm your registration click the URL below.</p>
-
-			<p><%= confirm_email_user_url(@user.confirm_token) %></p>
+        <div>
+            <p>Hi <%= @user.pseudonym %></p>
+            <p>Thanks for registering! To confirm your registration click the URL below.</p>
+            <p><%= confirm_email_user_url(@user.confirm_token) %></p>
+        </div>
   </div>
 </div>
