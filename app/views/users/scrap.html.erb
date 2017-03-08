@@ -1,0 +1,23 @@
+<!-- This is the membership signup form, needs to be configured for Heroku -->
+<!-- This goes in views/users/new.html.erb -->      
+      <%= form_for(@user) do |f| %>
+        <%= render 'shared/error_messages' %>
+        <%= f.label :pseudonym %>
+        <br>
+        <%= f.text_field :pseudonym, class: 'form-control' %>
+        <br>
+        <%= f.label :email %>
+        <br>
+        <%= f.email_field :email, class: 'form-control' %>
+        <br>
+        <%= f.label :password %>
+        <br>
+        <%= f.password_field :password, class: 'form-control' %>
+        <br>
+        <%= f.label :password_confirmation, "Confirmation" %>
+        <br>
+        <%= f.password_field :password_confirmation, class: 'form-control' %>
+        <br>
+        <br>
+        <%= f.submit "Create my account", class: "btn btn-primary" %>
+      <% end %>
