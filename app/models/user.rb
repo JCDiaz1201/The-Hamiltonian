@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+	before_create :confirmation_token
 	has_many :posts
 	has_many :comments, dependent: :destroy
 	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
@@ -11,4 +12,17 @@ class User < ActiveRecord::Base
 				format: { with: VALID_EMAIL_REGEX }
 	has_secure_password
 	validates :password, presence: true, length: { minimum: 7 }
+
+	def email_activate
+    self.email_confirmed = true
+    self.confirm_token = nil
+    save!(:validate => false)
+  end
+
+	private
+		def confirmation_token
+			if self.confirm_token.blank?
+				self.confirm_token = SecureRandom.urlsafe_base64.to_s
+			end
+		end
 end

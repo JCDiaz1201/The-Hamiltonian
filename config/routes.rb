@@ -8,8 +8,13 @@ Rails.application.routes.draw do
 
   resources 		:visitors, only:[:index, :show]
   resources 		:posts
-  resources 		:users
-  
+
+  resources 		:users do
+    member do
+      get :confirm_email
+    end
+  end
+
   resources :posts, :shallow => true do 
     resources :comments
   end
