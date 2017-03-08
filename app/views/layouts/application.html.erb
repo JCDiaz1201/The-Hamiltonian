@@ -5,14 +5,9 @@
     <title><%="The Hamiltonian | The Center for American Statecraft"%></title>
 
     <meta property="og:title" content="The Hamiltonian"/>
-    <% if @comment %>
-      <meta property="og:description" content="<%= @post.title %>"/>
-    <% else %>
-      <meta property="og:description" content="The Center for American Statecraft"/>
-      <meta property="og:image" content="http://fluper.ru/ffh/17/flag_amerika_oblaka_nebo_patriotizm_2560x1600.jpg"/>
-    <% end %>
+    <meta property="og:description" content="The Center for American Statecraft"/>
+    <meta property="og:image" content="http://fluper.ru/ffh/17/flag_amerika_oblaka_nebo_patriotizm_2560x1600.jpg"/>
     <meta property="og:url" content="http://the-hamiltonian.org"/>
-    
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => false %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
