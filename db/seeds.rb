@@ -8,7 +8,7 @@ Iaculis netus massa egestas integer nostra nisi ligula magna a nostra, aenean cr
 
 Faucibus placerat cursus mauris eu mauris at ac lectus, malesuada litora feugiat vel dictum lorem suspendisse condimentum ligula, pretium aenean nisl etiam nunc neque nullam egestas at turpis nec dictumst nibh eleifend mi, commodo phasellus lectus ac arcu hac aliquam mi, conubia metus netus nunc tortor per consectetur etiam porttitor eleifend sit egestas dui inceptos aliquam phasellus aenean fusce."
 
-User.create!(pseudonym: "Publius",
+User.create!(pseudonym: "JCD",
 			email: "jcdiaz1201@gmail.com",
 			password: "Lv1234567",
 			password_confirmation: "Lv1234567",
