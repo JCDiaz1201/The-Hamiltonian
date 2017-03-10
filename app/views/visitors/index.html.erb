@@ -25,6 +25,7 @@
                     <div class="col-md-2">
                         <%= image_tag blog.photo.url(:thumb) %>
                     </div>
+                    
                     <div class="col-md-10" id="index-post-info">
                         <h2 class="index-title"><%= blog.title %></h2>
                         <h5 class="index-content"><%= blog.content.truncate(100) %></h5>
