@@ -31,7 +31,7 @@ class UsersController < ApplicationController
     if user
       user.email_activate
       log_in user
-      flash[:success] = "Welcome to The Hamiltonian! Your email has been confirmed. Please sign in to continue."
+      flash[:success] = "Welcome to The Hamiltonian! Your email has been confirmed."
       redirect_to user
     else
       flash[:error] = "Sorry. User does not exist"
