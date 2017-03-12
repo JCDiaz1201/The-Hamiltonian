@@ -1,6 +1,6 @@
-<h1>Email Confirmation</h1>
-<div>
-    <p>Hi <%= @user.pseudonym %></p>
-    <p>Thanks for registering! To confirm your registration click the URL below.</p>
-    <%=confirm_email_user_url(@user.confirm_token)%>
-</div>
+Email Confirmation
+
+Hi <%= @user.pseudonym %>
+Thanks for registering! To confirm your registration click the URL below.
+<%=confirm_email_user_url(@user.confirm_token)%>
+

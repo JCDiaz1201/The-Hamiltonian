@@ -20,8 +20,6 @@ class UsersController < ApplicationController
 			UserMailer.registration_confirmation(@user).deliver
 			flash[:success] = 'Please confirm your email address to continue'
 			redirect_to root_url
-			# log_in @user
-			# redirect_to @user
 		else
 			flash.now[:error] = 'Something went wrong!'
 			render 'new'
