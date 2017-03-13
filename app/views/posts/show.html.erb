@@ -31,7 +31,7 @@
           <ol id="comments-field">
             <% @comments.each do |comment| %>
               <div id="blog-comment-content">
-                <%= comment.user.pseudonym %>(<%= comment.created_at.strftime("%b %d, %Y") %>)- <%= comment.content %>
+                <%= comment.user.pseudonym %> (<%= comment.created_at.strftime("%b %d, %Y") %>)- <%= comment.content %>
                 <% if current_user %>
                   <% if current_user.admin == true %>
                     <%= link_to '(Admin Action: Destroy)', comment, method: :delete, data: { confirm: 'Are you sure?' }%>
