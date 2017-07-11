@@ -29,7 +29,17 @@ At this point open your internet browser and type in "http://localhost:[port num
 
 And bam! You're set! You should be able to view my app in all its glory.
 
+Site is also live online at http://www.the-hamiltonian.org/
+
 Hope you enjoy!
+
+What I learned
+---------------
+The MVC framework and how to manipulate it 
+How to build proper and functioning relationships between relational databases
+How to build a full-fledged web application from scratch through the rails framework
+How to buld an attractive web application 
+Software development requires patience and persistence 
 
 Documentation and Support
 -------------------------
