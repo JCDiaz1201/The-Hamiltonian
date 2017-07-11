@@ -36,9 +36,13 @@ Hope you enjoy!
 What I learned
 ---------------
 The MVC framework and how to manipulate it 
+
 How to build proper and functioning relationships between relational databases
+
 How to build a full-fledged web application from scratch through the rails framework
+
 How to buld an attractive web application 
+
 Software development requires patience and persistence 
 
 Documentation and Support
