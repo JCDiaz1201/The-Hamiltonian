@@ -1,5 +1,21 @@
-The Hamiltonian
+The Hamiltonian - Center for American Statecraft
 ================
+
+Goals
+-----
+Build a web application to project my political views online in the hopes of influencing and shaping future political debates
+
+What I learned
+---------------
+The MVC framework and how to manipulate it 
+
+How to build proper and functioning relationships between relational databases
+
+How to build a full-fledged web application from scratch through the rails framework
+
+How to buld an attractive web application 
+
+Software development requires patience and persistence 
 
 Ruby on Rails
 -------------
@@ -28,6 +44,8 @@ At this point open your internet browser and type in "http://localhost:[port num
 	-In my case it is located on port 3000 so I enter: "http://localhost:3000"
 
 And bam! You're set! You should be able to view my app in all its glory.
+
+Site is also live online at http://www.the-hamiltonian.org/
 
 Hope you enjoy!
 
