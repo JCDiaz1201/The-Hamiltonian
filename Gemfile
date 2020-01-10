@@ -10,7 +10,7 @@ gem 'jbuilder', '~> 2.0'
 gem "rspec"
 gem "bcrypt", '3.1.11'
 gem "pundit"
-gem "paperclip", "~> 5.0.0"
+gem "paperclip", "~> 5.2.0"
 gem 'jquery-turbolinks'
 gem 'puma'
 gem 'bootstrap-sass'
