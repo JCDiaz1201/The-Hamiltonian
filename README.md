@@ -1,5 +1,6 @@
 The Hamiltonian - Center for American Statecraft
 ================
+This is a full-stack application built with Jquery, Ruby and the Ruby on Rails framework. 
 
 Goals
 -----
